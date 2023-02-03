@@ -1,0 +1,18 @@
+#include "MicroBit.h"
+
+MicroBit uBit;
+
+int main() {
+  // Initialize the micro:bit runtime.
+  uBit.init();
+
+  while (1) {
+    uBit.io.P0.setAnalogValue(1024);   // turn the motor on
+    uBit.sleep(1000);                   // wait for 1 second
+    uBit.io.P0.setAnalogValue(0);      // turn the motor off
+    uBit.sleep(1000);                   // wait for 1 second
+  }
+}
+
+
+//In this code, the vibration motor is connected to pin 0 (P0) on the micro:bit. The setAnalogValue function is used to control the voltage applied to the pin, which in turn controls the speed of the motor. A value of 1024 (out of 1023) turns the motor on, while a value of 0 turns it off. The sleep function is used to control the duration of the vibration.
