@@ -1,3 +1,6 @@
 Read me:
-Note that the exact wiring and setup of the vibration motor will depend on the specific motor being used, 
+Please take note that the exact wiring and setup of the vibration motor will depend on the specific motor being used, 
 so be sure to consult the datasheet or other documentation for the motor before connecting it to the micro:bit.
+This is the language of Python
+You may use micro:python website.
+You may code it at here: https://python.microbit.org/v/beta
